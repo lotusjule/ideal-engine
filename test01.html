@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Butler_Light;
+    src: url("fonts/Butler_Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Novecentosanswide_Bold;
+    /* font-weight: bold;*/
+    src: url("fonts/Novecentosanswide_Bold.otf") format("opentype");
+}
+
+#typo-container{
+ background-color:#000;
+ height:900px;
+}
+
+#tiny-typo-container div{
+  color:#fff;
+  font-family:Butler_Light;
+  font-size:17px;
+}
+
+#typo-container div{
+  color:#fff;
+  font-family: Novecentosanswide_Bold;
+ /* border: 5px solid orange;
+  height: 100px;
+  width: 100px; */
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+
+#typo-container div#typo1 {
+    font-size: 160px;
+    animation-name: fadeIn1;
+    position: absolute;
+    top: -60px;
+    left: 8%
+}
+
+#typo-container div#typo2 {
+    font-size: 300px;
+    animation-name: fadeIn2;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+}
+
+#typo-container div#typo3 {
+    font-size: 160px;
+    animation-name: fadeIn3;
+    position: absolute;
+    top: 100px;
+    left: 11%;
+}
+
+
+@keyframes fadeIn1{
+  0%{ opacity: 0;}
+  12.5%{ opacity: 1;}
+  90%{ opacity: 1; }
+  100%{ opacity: 0; }
+}
+
+@keyframes fadeIn2{
+  0%{ opacity: 0;}
+  12.5%{ opacity: 0;}
+  25%{ opacity: 1;}
+  90%{ opacity: 1; }
+  100%{ opacity: 0; }
+}
+
+@keyframes fadeIn3{
+  0%{ opacity: 0;}
+  25%{ opacity: 0;}
+  37.5%{ opacity: 1;}
+  90%{ opacity: 1; }
+  100%{ opacity: 0; }
+}
+
+
